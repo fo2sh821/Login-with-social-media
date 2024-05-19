@@ -1,0 +1,225 @@
+            /* ALL */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: rgb(83, 82, 82);
+    scroll-behavior: smooth
+}
+
+::selection {
+    color: #eee;
+    background: #1877f2
+}
+
+::placeholder {
+    color: #eee;
+    text-transform: capitalize;
+    text-align: start
+}
+
+:root {
+    --mainColor: #eee;
+    --mainBackground: #333;
+    --mainWidth: 100%;
+    --mainMargin: auto;
+    --mainFont-size: 16px;
+    --mainDisplay: flex;
+}
+
+body, div.contanier, header, fieldset, .card, .or, .other-button, footer .buttons, footer .buttons button, footer .buttons button a, footer .buttons button a, footer .buttons button a span {
+    display: flex
+}
+
+body, div.contanier, fieldset, .card , footer .buttons {
+    flex-wrap: wrap
+}
+
+
+body {
+    justify-content: center;
+    background-image: url(../Image/wallpaperflare.com_wallpaper\ \(14\).jpg);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 100vh;
+    margin:  var(--mainMargin);
+    align-items: center;
+    align-content: center
+}
+
+div.contanier {
+    border-radius: 10px 10px 50px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: var(--mainWidth);
+    text-align: center;
+    margin: var(--mainMargin);
+    height: calc(675px/1.25)
+}
+
+header {
+    height: 10%;
+    width: var(--mainWidth);
+    background-color: currentcolor;
+    outline: none;
+    border-top-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+}
+
+header h1{
+    color: var(--mainColor);
+    text-align: center;
+    padding: 4px;
+    margin: var(--mainMargin)
+}
+
+main {
+    background-color: currentcolor;
+    margin: 4px var(--mainMargin)
+}
+
+fieldset {
+    flex-wrap: wrap;
+    width: calc( var(--mainWidth) + 0% );
+    margin: 6px auto;
+    border: none
+}
+
+.last,.inputs {
+    display: grid;
+    gap: 17px;
+    width: var(--mainWidth)
+}
+
+.last {
+    gap: 4px
+}
+
+.card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: var(--mainWidth);
+    margin: 4px
+}
+
+.card input {
+    width: calc( var(--mainWidth) - 40%);
+    border: none;
+    text-transform: none;
+    background-color: transparent;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #eee;
+    padding-left: 12px
+}
+
+.or {
+    flex-wrap: nowrap;
+    align-items: center;
+    width: var(--mainWidth);
+    margin: auto
+}
+
+.or span {
+    width: 10%;
+    color: #eee
+}
+
+.card a {
+    width: var(--mainWidth);
+    color: var(--mainColor)
+}
+
+.buttons {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    width: var(--mainWidth);
+    margin: var(--mainMargin)
+}
+
+button {
+    text-transform: capitalize;
+    text-align: center;
+    width: calc( var(--mainWidth) - 48%);
+    margin: auto 5px;
+    outline: none;
+    outline: none;
+    border: solid 1px gray;
+    border-radius: 30px;
+    padding: 3px
+}
+
+.other-button {
+    width: var(--mainWidth);
+    margin: 10px
+}
+
+button:hover {
+    background-color: var(--mainBackground);
+    color: var(--mainColor);
+    transition-delay: 0.4s
+    
+}
+
+
+footer {
+    width: var(--mainWidth);
+    background-color: currentcolor;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 3px
+}
+
+footer .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: var(--mainWidth)
+}
+
+footer .buttons button {
+    justify-content: center;
+    background-color: transparent;
+    width: var(--mainWidth);
+    border: none
+}
+
+footer .buttons button a {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    width: calc( var(--mainWidth) - 20% );
+    border: 1px  var(--mainColor) solid;
+    color: var(--mainBackground);
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    padding: 2px;
+    text-decoration: none;
+    cursor:context-menu
+}
+
+footer .buttons button a, footer .buttons button a span {
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    color: var(--mainBackground);
+    background-color: var(--mainColor)
+}
+
+footer .buttons button a span img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0 0 10px
+}
+
+footer .buttons button a span img.git {
+    width: 1.9rem;
+    height: 1.9rem
+}
+
